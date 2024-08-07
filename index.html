@@ -1,0 +1,26 @@
+<!DOCTYPE html>	
+<html>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Ergo</h1>
+
+        <div id="list-box">
+            <h1 id="no-todos">NO CURRENT TASKS</h1>
+        </div>
+        <div id="add-task-section">
+            <input type="text" id="add-task-entry" placeholder="Enter a new task">
+            <button id="add-task-button"
+                    onclick="addTask()">
+                <i class='bx bx-plus-medical'></i>
+            </button> 
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

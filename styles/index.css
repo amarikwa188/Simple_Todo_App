@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    min-height: 90vh;
+    /* background-color: #8b000030; */
+    background-color: antiquewhite;
+}
+
+#main{
+    background-color: lightyellow;
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#list-box{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    height: 150px;
+
+    overflow-y: auto;
+}
+
+#list-box::-webkit-scrollbar{
+    width: 5px;
+}
+
+#list-box::-webkit-scrollbar-track{
+    background-color: lightgrey;
+}
+
+#list-box::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
+.list-item{
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.list-item p{
+    display: inline-block;
+    width: 70%;
+    word-break: break-all;
+    margin: 8px 10px 8px 20px;
+    /* padding-left: 10px; */
+}
+
+.check-button, .delete-button, .edit-button{
+    background-color: lightgreen;
+    border: none;
+    margin: 8px 0px 0px 0px;
+    background-color: white;
+}
+
+
+.check-button, .delete-button, .edit-button i{
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+
+
+.check-button:hover, .edit-button:hover, .delete-button:hover{
+    cursor: pointer;
+}
+
+#add-task-section{
+    text-align: center;
+    margin: 15px 0 20px 0;
+}
+
+#add-task-entry{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+#add-task-entry:focus{
+    outline: none;
+    border: 1.5px solid black;
+}
+
+#add-task-button{
+    background-color: black;
+    border: 1px solid black;
+    border: none;
+    padding: 5px 10px;
+    color: lightyellow;
+    /* background-color: white; */
+}
+
+#add-task-button:hover{
+    cursor: pointer;
+    background-color: rgb(44, 44, 44);
+}
+
+#no-todos{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #0000006c;
+    text-align: center;
+    padding: 35px;
+}

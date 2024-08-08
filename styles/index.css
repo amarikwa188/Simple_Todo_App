@@ -27,6 +27,10 @@ body{
     overflow-y: auto;
 }
 
+#list-box:focus{
+    outline: none;
+}
+
 #list-box::-webkit-scrollbar{
     width: 5px;
 }
